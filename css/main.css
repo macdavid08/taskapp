@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Radio+Canada:wght@300;400;500;600;700&family=Roboto&display=swap');
+
+body{
+    background: #f2f2f2;
+    margin: 0;
+    font-family: poppins;
+}
+
+.navbar {
+    background: white;
+    padding: 1em;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+span {
+    color: #007af3;
+}
+
+nav{
+    display: none;
+}
+
+.ex {
+    float: right;
+    color: white;
+    font-size: 1.5em;
+    margin-top: -.7em;
+}
+
+.left-side {
+    display: flex;
+    place-content: space-between;
+
+}
+
+.mobile-toggle {
+    cursor: pointer;
+}
+
+
+
+a {
+    color: #444444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+}
+
+.subhead {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: .3em;
+}
+
+.subhead h1 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: .2em;
+}
+
+.try {
+    background: #007af3;
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    font-size: 1.4em;
+    border-radius: 5em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.watch {
+    display:block;
+    margin-top: 1em;
+}
+
+.watch i {
+    margin-right: .5em;
+    font-size: 2em;
+    color: black;
+}
+
+.list {
+    display: block;
+    margin-top: 1.5em;
+    font-size: 3em;
+    text-align: center;
+}
+
+.list i {
+    font-size: 3.5em;
+}
+
+section.features {
+    background: #20272e;
+    color: white;
+}
+
+ul.feature-list {
+    margin: 0;
+    padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+li {
+    margin: 0;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-left: 3em;
+    position: relative;
+}
+
+.feature-list li::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background: greenyellow;
+    left: -2em;
+}
+
+.features img {
+    display: none;
+}
+
+.review {
+    background: #007af3;
+    color: white;
+}
+
+
+.review li {
+    margin:0 auto 5em auto;
+    background: #006bdc;
+    text-align: center;
+    padding:2em 1em;
+    width: 80%;
+    border-radius: 1em;
+
+
+}
+
+.review li img {
+    width: 5em;
+    height: 5em;
+    border: 5px solid #006bdc;
+    border-radius: 5em;
+    margin-top: -4.5em;
+}
+
+
+.contact h2 {
+    font-size: 2em;
+}
+
+.contact label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+.contact input, textarea {
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.contact input[type="submit"] {
+    background: #007af3;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+}
+
+.contact-right iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.mobile-toggle {
+    display: block;
+}
+
+#hamb  {
+    font-size: 1.2em;
+    color: black;
+}
+
+
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #20272e;
+    height: 100vh;
+    padding: 1em;
+}
+
+ul .primary_nav {
+    margin-top: 5em;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    font-size: 1.3em;
+    text-align: right;
+}
+
+nav li a:hover {
+    font-weight: bold;
+}
+
+.mobile-toggle {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .mobile-toggle {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul a {
+        color: black;
+        font-size: 1em;
+        padding: .1em 1em;
+    }
+
+    ul .primary_nav {
+        margin: 0;
+    }
+
+
+    li.current a{
+        font-weight: bold;
+    }
+
+    li.premium a {
+        color: #007af3;
+        border: 2px solid #006bdc;
+        font-weight: bold;
+        border-radius: 5em;
+    }
+
+    li.premium a:hover {
+        background: #007af3;
+        color: white;
+        border: none;
+    }
+
+    #exit {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .container .left-side {
+        margin: 3em 3em 0 5em;
+    }
+
+    .left-side h1 {
+        font-size: 3em;
+        width: 90%;
+    }
+
+    .list {
+        margin-top: -.5em;
+        width: 30%;
+        margin-right: 2.5em;
+    }
+
+    .list i{
+        font-size: 6em;
+    }
+
+    .hero-cta {
+        display: flex;
+    }
+
+    .try {
+        margin-right: 1em;
+    }
+
+    
+
+     .container .feature-list {
+        display: block;
+        margin-left: 5em;
+    }
+    .feature-list li {
+        font-size: 1.4em;
+    }
+
+    .feature-list li::before {
+        width: 30px;
+        height: 30px;
+    }
+
+    .features {
+        position: relative;
+    }
+
+    .features img {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 350px;
+        bottom: -2em;
+    }
+
+    .review .container ul {
+        display: flex;
+    }
+
+    .review .container ul li {
+        margin: 0 .5em;
+    }
+
+    .contact {
+        position: relative;
+    }
+
+    .contact .container {
+        display: flex;
+    }
+
+    .contact-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%;
+    }
+
+    .contact-right iframe {
+        height: 100%;
+    }
+}
